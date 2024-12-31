@@ -1,5 +1,76 @@
 <!DOCTYPE html>
 <html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Sayt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">Əsas Səhifə</a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#">Kömək və Əlaqə</a></li>
+                <li>
+                    <select id="language-select" class="language-select">
+                        <option value="az">Azərbaycan</option>
+                        <option value="ru">Rus</option>
+                        <option value="en">İngilis</option>
+                    </select>
+                </li>
+                <li><a href="#" id="profile-link">Profil</a></li>
+                <li><a href="#" id="logout-link">Çıxış</a></li>
+                <li>
+                    <a href="#" id="notifications">
+                        Bildirişlər <span class="notification-count">3</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="login-section">
+            <h2>Giriş</h2>
+            <form id="login-form" class="form">
+                <label for="fin">FİN Kodu:</label>
+                <input type="text" id="fin" name="fin" required>
+                <button type="submit">Daxil ol</button>
+            </form>
+            <p>Ya da:</p>
+            <button id="asan-login">AsanLogin ilə daxil ol</button>
+            <button id="social-login">Sosial şəbəkə ilə daxil ol</button>
+        </section>
+
+        <section class="register-section">
+            <h2>Qeydiyyat</h2>
+            <form id="register-form" class="form">
+                <label for="email">E-poçt:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Mobil nömrə:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Qeydiyyatdan keç</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Professional Sayt. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +78,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Bölməsi -->
+    <!-- Header Bölməsi 
     <header class="header">
         <div class="header-container">
             <div class="logo">
@@ -34,13 +105,13 @@
         </div>
     </header>
 
-    <!-- Əsas Məzmun -->
+    <!-- Əsas Məzmun 
     <main class="main-content">
-        <!-- Dashboard Panel -->
+        <!-- Dashboard Panel --
         <section class="dashboard">
             <h1>Xoş gəlmisiniz, İstifadəçi!</h1>
             
-            <!-- Statistika Kartları -->
+            <!-- Statistika Kartları --
             <div class="stats-cards">
                 <div class="stat-card">
                     <h3>Ümumi Qiymətləndirmə</h3>
@@ -56,7 +127,7 @@
                 </div>
             </div>
 
-            <!-- 360 Qiymətləndirmə Bölməsi -->
+            <!-- 360 Qiymətləndirmə Bölməsi --
             <section class="evaluation-section">
                 <h2>360° Qiymətləndirmə</h2>
                 <div class="evaluation-form">
@@ -90,11 +161,11 @@
         </section>
     </main>
 
-    <!-- Footer Bölməsi -->
+    <!-- Footer Bölməsi --
     <footer class="footer">
         <div class="footer-container">
             <p>&copy; 2024 Şirkət Adı. Bütün hüquqlar qorunur.</p>
         </div>
     </footer>
 </body>
-</html>
+</html> -->
