@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="az">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İşçi Portalı | 360° Qiymətləndirmə</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header Bölməsi -->
     <header class="header">
@@ -15,86 +17,75 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="dashboard.html">Ana Səhifə</a></li>
+                    <li><a href="index.html">Ana Səhifə</a></li>
                     <li><a href="evaluation.html">Qiymətləndirmə</a></li>
                     <li><a href="reports.html">Hesabatlar</a></li>
                     <li><a href="profile.html">Profil</a></li>
+                    <li><a href="login.html">Daxil Ol</a></li>
+                    <li><a href="register.html">Qeydiyyat</a></li>
                 </ul>
             </nav>
-            <div class="user-menu">
-                <div class="notifications">
-                    <span class="notification-icon">🔔</span>
-                    <span class="notification-count">3</span>
-                </div>
-                <div class="user-profile">
-                    <img src="/avatar.png" alt="İstifadəçi şəkli">
-                    <span class="username">İstifadəçi adı</span>
-                </div>
-            </div>
         </div>
     </header>
 
-    <!-- Əsas Məzmun -->
-    <main class="main-content">
-        <!-- Dashboard Panel -->
-        <section class="dashboard">
-            <h1>Xoş gəlmisiniz, İstifadəçi!</h1>
-            
-            <!-- Statistika Kartları -->
-            <div class="stats-cards">
-                <div class="stat-card">
-                    <h3>Ümumi Qiymətləndirmə</h3>
-                    <p class="stat-number">85%</p>
+    <!-- Dashboard Bölməsi -->
+    <main>
+        <h1>İşçi Portalı Dashboard</h1>
+        <div class="dashboard-container">
+            <!-- Sol Panel: İşçilər və Fəaliyyət Statusu -->
+            <div class="dashboard-left">
+                <div class="dashboard-box">
+                    <h3>İşçilərin Siyahısı</h3>
+                    <div class="stat">
+                        <span>10</span> işçi fəaliyyət göstərir
+                    </div>
+                    <div class="stat">
+                        <span>5</span> işçi tətilə çıxıb
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <h3>Tamamlanmış Tapşırıqlar</h3>
-                    <p class="stat-number">12/15</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Növbəti Qiymətləndirmə</h3>
-                    <p class="stat-date">15 Mart 2024</p>
+
+                <!-- Statistikalar -->
+                <div class="dashboard-box">
+                    <h3>Departamentlər üzrə Statistikalar</h3>
+                    <div class="stat">
+                        <span>3</span> departament fəaldır
+                    </div>
+                    <div class="stat">
+                        <span>2</span> departament yeni işə qəbul edib
+                    </div>
                 </div>
             </div>
 
-            <!-- 360 Qiymətləndirmə Bölməsi -->
-            <section class="evaluation-section">
-                <h2>360° Qiymətləndirmə</h2>
-                <div class="evaluation-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="employee">İşçi</label>
-                            <select id="employee" name="employee">
-                                <option value="">İşçi seçin</option>
-                                <option value="1">Əhməd Əhmədov</option>
-                                <option value="2">Leyla Məmmədova</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Peşəkar Bacarıqlar</label>
-                            <div class="rating-group">
-                                <input type="radio" name="skills" value="1">1
-                                <input type="radio" name="skills" value="2">2
-                                <input type="radio" name="skills" value="3">3
-                                <input type="radio" name="skills" value="4">4
-                                <input type="radio" name="skills" value="5">5
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="comments">Əlavə Qeydlər</label>
-                            <textarea id="comments" name="comments"></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Göndər</button>
-                    </form>
+            <!-- Sağ Panel: Bildirişlər və Tapşırıqlar -->
+            <div class="dashboard-right">
+                <div class="dashboard-box">
+                    <h3>Bildirişlər</h3>
+                    <div class="stat">
+                        Yeni bildirişlər yoxdur.
+                    </div>
                 </div>
-            </section>
-        </section>
+
+                <!-- İstifadəçi Məlumatları -->
+                <div class="dashboard-box">
+                    <h3>Şəxsi Məlumatlar</h3>
+                    <div class="stat">
+                        <span>Ad Soyad:</span> Təhməz Muradov
+                    </div>
+                    <div class="stat">
+                        <span>Şöbə:</span> Proqramlaşdırma
+                    </div>
+                    <div class="stat">
+                        <span>Status:</span> Aktiv
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer Bölməsi -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2024 Şirkət Adı. Bütün hüquqlar qorunur.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Şirkət Adı. Bütün hüquqlar qorunur.</p>
     </footer>
 </body>
+
 </html>

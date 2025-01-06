@@ -350,5 +350,5 @@ window.addEventListener("online", function () {
 
 window.addEventListener("offline", function () {
     console.log("İnternet əlaqəsi kəsildi");
-    // İstifadəçiyə bildiriş göstərə bilərsiniz
+    // İnternet əlaqəsi olmadıqda bildirişləri saxlaya bilərik
 });

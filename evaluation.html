@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İşçi Portalı | Qiymətləndirmə</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/logo.png" alt="Şirkət Logosu">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Ana Səhifə</a></li>
+                    <li><a href="evaluation.html">Qiymətləndirmə</a></li>
+                    <li><a href="reports.html">Hesabatlar</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <div class="notifications">
+                    <span class="notification-icon">🔔</span>
+                    <span class="notification-count">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="/avatar.png" alt="İstifadəçi şəkli">
+                    <span class="username">İstifadəçi adı</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="evaluation-section">
+            <h1>360° Qiymətləndirmə</h1>
+            <div class="evaluation-form">
+                <form>
+                    <div class="form-group">
+                        <label for="employee">İşçi</label>
+                        <select id="employee" name="employee">
+                            <option value="">İşçi seçin</option>
+                            <option value="1">Əhməd Əhmədov</option>
+                            <option value="2">Leyla Məmmədova</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Peşəkar Bacarıqlar</label>
+                        <div class="rating-group">
+                            <input type="radio" name="skills" value="1">1
+                            <input type="radio" name="skills" value="2">2
+                            <input type="radio" name="skills" value="3">3
+                            <input type="radio" name="skills" value="4">4
+                            <input type="radio" name="skills" value="5">5
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Əlavə Qeydlər</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Göndər</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Şirkət Adı. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
